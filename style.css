@@ -1,0 +1,123 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+:root {
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-accent: "Poppins", sans-serif;
+
+  --fs-body: 1.125rem;
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --clr-accent: hsl(322, 100%, 66%);
+
+  --clr-neutral-100: hsl(193, 100%, 96%);
+  --clr-neutral-300: hsl(208, 11%, 55%);
+  --clr-neutral-900: hsl(192, 100%, 9%);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+a {
+  display: block;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: 300;
+  padding: 1.5rem;
+}
+
+section {
+  padding: 2.5rem 0;
+}
+
+@media (min-width: 40em) {
+  section {
+    padding: 3.5rem 0;
+  }
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.split > * {
+  width: 100%;
+}
+
+.split > * + * {
+  margin: 4rem 0 0 0;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * + * {
+    margin: 0 0 0 2.5rem;
+  }
+}
+
+.xl-space {
+  margin-top: 5rem !important;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
