@@ -40,13 +40,15 @@ figure {
 }
 
 a {
-  display: block;
+  display: inline-block;
+  text-decoration: none;
 }
 
-ul[class],
+ul,
 ol[class] {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 input,
@@ -66,7 +68,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
   font-weight: 300;
-  padding: 1.5rem;
 }
 
 section {
@@ -80,7 +81,7 @@ section {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -116,8 +117,50 @@ section {
   margin-top: 5rem !important;
 }
 
+header {
+  padding: 2.5rem 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer {
+  background-color: var(--clr-neutral-900);
+  padding: 2.5rem 0;
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+.social-media > * img {
+  height: 30px;
+}
+.footer-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-flex > img {
+  align-self: flex-start;
+}
+.card {
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
+  /* transition: opacity 350ms ease; */
+}
+.main-content {
+  padding: 0 0 10rem 0;
+}
+.btn {
+  background-color: var(--clr-accent);
+  font-family: inherit;
+  font-weight: var(--fw-600);
+  color: var(--clr-neutral-100);
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
 }
